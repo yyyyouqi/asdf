@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>.mermaid svg{max-width:none!important} body{margin:0;background:#fff;font-family:"SimSun","宋体",serif} .fig{display:inline-block;padding:16px;background:#fff}</style>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script></head><body>
+<div class="fig" id="f1"><pre class="mermaid">flowchart TD
+  L[&quot;文献研究&lt;br/&gt;数字化实验 · 探究动机 · 证据推理&quot;] --&gt; F[&quot;理论框架&lt;br/&gt;（第三章）&quot;]
+  F --&gt; W[&quot;工具编制&lt;br/&gt;情境动机量表 · 课前基线量表 · 疑问卡与学习单&lt;br/&gt;疑问编码 · 推理过程编码 · 访谈提纲 · 教案&quot;]
+  W --&gt; PT[&quot;预试&lt;br/&gt;学生认知访谈 · 量表信度&quot;]
+  PT --&gt; B[&quot;课前：特质基线量表&quot;]
+  B --&gt; CL[&quot;数字化实验班授课（分组实验）&lt;br/&gt;疑问卡两栏 · 全班录像 · 各组录音&quot;]
+  B -.-&gt; CT[&quot;对照班授课&lt;br/&gt;（简单对照）&quot;]
+  CL --&gt; AF[&quot;课后当天&lt;br/&gt;情境动机量表 · 刺激回忆访谈（按小组选人）&quot;]
+  CT -.-&gt; AF
+  AF --&gt; DL[&quot;2–3 周后：延迟后测&quot;]
+  DL --&gt; AN[&quot;数据处理&quot;]
+  AN --&gt; A1[&quot;疑问编码&lt;br/&gt;指向 × 类型 × 与预测关系&quot;]
+  AN --&gt; A2[&quot;推理过程编码&lt;br/&gt;推理单元 · 成分与质量 · 对异常数据的反应&quot;]
+  AN --&gt; A3[&quot;访谈主题分析&quot;]
+  AN --&gt; A4[&quot;量表&lt;br/&gt;课后 vs 延迟&quot;]
+  A1 --&gt; TS[&quot;动机—推理时序分析&lt;br/&gt;按时间轴对齐 · 小组间比较&quot;]
+  A2 --&gt; TS
+  A3 --&gt; TR[&quot;三角互证&quot;]
+  A4 --&gt; TR
+  TS --&gt; TR
+  TR --&gt; R[&quot;结论与教学启示&quot;]
+</pre></div><br>
+<div class="fig" id="f3"><pre class="mermaid">flowchart TB
+  D[&quot;数字化实验&lt;br/&gt;（中介）&quot;]
+  subgraph X[&quot;探究过程（按时间展开）&quot;]
+    direction LR
+    M[&quot;探究动机&lt;br/&gt;激活 · 维持 · 减弱&lt;br/&gt;情境兴趣 / 个人兴趣萌发&quot;]
+    R[&quot;证据推理&lt;br/&gt;证据选择 → 数据质量评价&lt;br/&gt;→ 化学解释 → 结论修正&quot;]
+    M ==&gt;|&quot;推动深加工证据&quot;| R
+    R ==&gt;|&quot;证据反馈：与预测相符 / 不符&quot;| M
+  end
+  D --&gt;|&quot;改变证据形态&lt;br/&gt;曲线呈现过程&quot;| R
+  D --&gt;|&quot;缩短反馈周期&quot;| X
+  D --&gt;|&quot;触发情境兴趣&lt;br/&gt;设备操作负担&quot;| M
+  C[&quot;条件&lt;br/&gt;教师提示 · 同伴说明理由 · 任务&quot;] -.-&gt; X
+  X --&gt; Q[&quot;观测&lt;br/&gt;疑问卡 · 小组推理单元&lt;br/&gt;行为指标 · 刺激回忆访谈&quot;]
+  Q --&gt; O[&quot;小组间比较&lt;br/&gt;不同过程从何而来&quot;]
+</pre></div>
+<script>mermaid.initialize({startOnLoad:true,theme:"neutral",flowchart:{htmlLabels:false,useMaxWidth:false},htmlLabels:false,themeVariables:{fontFamily:"SimSun, serif",fontSize:"15px"}});</script>
+</body></html>
